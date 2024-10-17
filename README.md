@@ -86,6 +86,12 @@ docker exec -it backend sh -c "python manage.py migrate"
 docker exec -it backend sh -c "python manage.py createsuperuser"
 ```
 
+**Run the Command to Create Tenants:**
+
+```
+"python manage.py create_sample_tenants"
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
