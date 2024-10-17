@@ -1,5 +1,14 @@
 # Multi-Tenant-User-Management-System-with-Custom-Permissions
 
+## Table of Contents
+
+- [multi-tenant-user-ms Backend](#multi-tenant-user-ms-Backend)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+  - [License](#license)
+
 ## Introduction
 
 Multi-Tenant User Management System with Custom Permissions: A Django-based system that supports multiple organizations with isolated user data. It features custom roles and permissions for fine-grained access control, and a RESTful API for managing users, roles, and access securely across tenants.
@@ -18,24 +27,8 @@ This is the backend source code of MTUMS. used django rest framework and postgre
 1. **Clone the Repository**
    To get this repository, run the following command inside your terminal
    ```shell
-   git clone https://github.com/yourusername/multi-tenant-user-management.git
+   git clone https://github.com/alimashayekhy/multi-tenant-user-management.git
    ```
-
-### Installation
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## Table of Contents
-
-- [multi-tenant-user-ms Backend](#multi-tenant-user-ms-Backend)
-  - [Introduction](#introduction)
-  - [Features](#features)
-  - [Getting Started](#getting-started)
-    - [Installation](#installation)
-  - [Database schema](#database-schema)
-  - [License](#license)
 
 ### Installation
 
@@ -66,12 +59,6 @@ If you want to run the project locally, make sure you have Docker installed. You
 
 4. **Running the Project:**
 
-To run the project in a production environment and deploy it on a VPS, use the following command:
-
-```shell
-docker-compose-prod up -d
-```
-
 To run the project for development purposes, use the following command:
 
 ```shell
@@ -87,8 +74,9 @@ After starting the Docker container, follow these commands to set up your databa
 Run the following commands to apply database migrations:
 
 ```shell
-docker exec -it backend sh -c "python manage.py makemigrations accounts"
-docker exec -it backend sh -c "python manage.py makemigrations gathering"
+docker exec -it backend sh -c "python manage.py startapp tenants"
+docker exec -it backend sh -c "python manage.py startapp users"
+docker exec -it backend sh -c "python manage.py startapp authentication"
 docker exec -it backend sh -c "python manage.py migrate"
 ```
 
@@ -98,8 +86,6 @@ docker exec -it backend sh -c "python manage.py migrate"
 docker exec -it backend sh -c "python manage.py createsuperuser"
 ```
 
-## Database schema
+## License
 
-<p align="center">
-<img src="https://github.com/H-VICTOOR/TechCafe-Backend/blob/main/demo/database_schema.png" alt="database schema"/>
-</p>
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
