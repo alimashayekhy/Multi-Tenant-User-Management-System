@@ -1,4 +1,4 @@
-# Multi-Tenant-User-Management-System-with-Custom-Permissions
+# multi-tenant-user-ms Backend
 
 ## Table of Contents
 
