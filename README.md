@@ -89,7 +89,7 @@ docker exec -it backend sh -c "python manage.py createsuperuser"
 **Run the Command to Create Tenants:**
 
 ```
-"python manage.py create_sample_tenants"
+python manage.py create_sample_tenants
 ```
 
 ## License
