@@ -1,0 +1,42 @@
+# Core Framework
+  # A high-level Python web framework
+  Django>=4.0,<5.0,
+
+# API Development
+  # A powerful and flexible toolkit for building Web APIs
+  djangorestframework
+  # OpenAPI 3 schema generation for Django REST Framework
+  drf-spectacular
+  # JSON Web Token authentication for Django REST Framework
+  djangorestframework-simplejwt
+
+# Security and Configuration
+  # Handles Cross-Origin Resource Sharing (CORS) for your Django application
+  django-cors-headers
+  # Environment configuration
+  python-decouple
+
+# Database Management
+  # Tenant support for Django projects using PostgreSQL schemas
+  django-tenant-schemas
+  django-tenants
+  # PostgreSQL database adapter for Python (database client)
+  psycopg2-binary
+
+# Testing
+  # A framework that makes building simple and scalable tests easy
+  pytest
+  # Django support for pytest, allowing you to use pytest for testing Django projects
+  pytest-django
+
+# Utilities
+  # A library for converting Markdown text to HTML
+  markdown
+  # A Django application for allowing users to filter querysets dynamically
+  django-filter
+  
+  django-debug-toolbar
+
+# Deployment
+  # A Python WSGI HTTP server for UNIX, suitable for deploying Django applications
+  gunicorn
