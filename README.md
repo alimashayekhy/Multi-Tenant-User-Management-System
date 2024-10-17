@@ -59,10 +59,10 @@ If you want to run the project locally, make sure you have Docker installed. You
 
 4. **Running the Project:**
 
-To run the project for development purposes, use the following command:
+To run the project, use the following command:
 
 ```shell
-docker-compose up -d
+docker-compose up --build
 ```
 
 These commands will start the necessary Docker containers and run your project. Make sure to replace docker-compose-prod with the actual name of your production Docker Compose file if it's different.
